@@ -39,7 +39,7 @@ Include changelog/README updates in the same commit.
 ## 6. Publish to npm
 ```bash
 npm version patch   # bumps the version and creates a git tag
-git push origin main --tags
+git push origin master --tags
 npm publish --access public
 ```
 Tags make it easier to track releases in GitHub.
