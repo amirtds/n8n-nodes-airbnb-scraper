@@ -18,8 +18,8 @@ export class AirbnbScraper implements INodeType {
 		defaults: {
 			name: 'Airbnb Scraper',
 		},
-		inputs: [NodeConnectionType.Main],
-		outputs: [NodeConnectionType.Main],
+		inputs: ['main'],
+		outputs: ['main'],
 		credentials: [
 			{
 				name: 'airbnbScraperApi',
