@@ -38,16 +38,9 @@ Include changelog/README updates in the same commit.
 
 ## 6. Publish to npm
 ```bash
-npm login        # only if not already authenticated
+npm version patch   # bumps the version and creates a git tag
+git push origin main --tags
 npm publish --access public
-```
-Wait a minute for npm indexing, then verify:
-- https://www.npmjs.com/package/n8n-nodes-airbnb-scraper
-
-## 7. Tag the Release (optional but recommended)
-```bash
-git tag v<version>
-git push origin v<version>
 ```
 Tags make it easier to track releases in GitHub.
 

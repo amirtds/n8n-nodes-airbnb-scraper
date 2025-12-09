@@ -1,5 +1,6 @@
 import {
 	IAuthenticateGeneric,
+	ICredentialTestRequest,
 	ICredentialType,
 	INodeProperties,
 } from 'n8n-workflow';
@@ -25,6 +26,16 @@ export class AirbnbScraperApi implements ICredentialType {
 	authenticate: IAuthenticateGeneric = {
 		type: 'generic',
 		properties: {
+			headers: {
+				Authorization: '={{"Bearer " + $credentials.apiToken}}',
+			},
+		},
+	};
+
+	test: ICredentialTestRequest = {
+		request: {
+			baseURL: 'https://scraper.shortrentals.ai',
+			url: '/health',
 			headers: {
 				Authorization: '={{"Bearer " + $credentials.apiToken}}',
 			},
