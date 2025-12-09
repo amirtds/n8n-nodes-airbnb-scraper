@@ -32,7 +32,7 @@ Fix any issues the scanner or linter reports. Verified community nodes must pass
 ```bash
 git add .
 git commit -m "Release v<version>"
-git push origin main
+git push origin master
 ```
 Include changelog/README updates in the same commit.
 
