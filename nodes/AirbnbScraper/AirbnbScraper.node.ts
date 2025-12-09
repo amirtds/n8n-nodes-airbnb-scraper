@@ -3,7 +3,6 @@ import {
 	INodeExecutionData,
 	INodeType,
 	INodeTypeDescription,
-	NodeConnectionType,
 } from 'n8n-workflow';
 
 export class AirbnbScraper implements INodeType {
@@ -100,7 +99,7 @@ export class AirbnbScraper implements INodeType {
 						'airbnbScraperApi',
 						{
 							method: 'POST',
-							url: 'https://airbnb-analyzer.cubite.io/api/scrape/listing',
+							url: 'https://scraper.shortrentals.ai/api/scrape/listing',
 							body: {
 								listingId,
 							},

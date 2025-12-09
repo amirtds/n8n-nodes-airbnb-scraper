@@ -17,19 +17,25 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/shortrentals/n8n-nodes-airbnb-scraper.git"
+    "url": "https://github.com/ShortRentals-AI/n8n-nodes-airbnb-scraper.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ShortRentals-AI/n8n-nodes-airbnb-scraper/issues"
   },
   "main": "dist/index.js",
   "scripts": {
     "build": "tsc && gulp build:icons",
     "dev": "tsc --watch",
     "format": "prettier nodes credentials --write",
-    "lint": "eslint nodes credentials package.json",
-    "lintfix": "eslint nodes credentials package.json --fix",
+    "lint": "eslint nodes credentials --ext .ts",
+    "lintfix": "eslint nodes credentials --ext .ts --fix",
+    "check": "npx @n8n/scan-community-package .",
     "prepublishOnly": "npm run build"
   },
   "files": [
-    "dist"
+    "dist",
+    "LICENSE",
+    "README.md"
   ],
   "n8n": {
     "n8nNodesApiVersion": 1,
@@ -42,6 +48,7 @@
   },
   "devDependencies": {
     "@types/node": "^20.10.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@typescript-eslint/parser": "^6.0.0",
     "eslint": "^8.56.0",
     "gulp": "^4.0.2",
