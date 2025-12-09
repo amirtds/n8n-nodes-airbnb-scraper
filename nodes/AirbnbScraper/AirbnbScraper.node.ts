@@ -9,7 +9,7 @@ export class AirbnbScraper implements INodeType {
 	description: INodeTypeDescription = {
 		displayName: 'Airbnb Scraper',
 		name: 'airbnbScraper',
-		icon: 'file:airbnb.svg',
+		icon: 'file:shortrentals.svg',
 		group: ['transform'],
 		version: 1,
 		subtitle: '={{$parameter["operation"]}}',

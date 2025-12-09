@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-airbnb-scraper",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "n8n node to scrape Airbnb listing data using the Airbnb Analyzer API",
   "keywords": [
     "n8n-community-node-package",
@@ -17,10 +17,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ShortRentals-AI/n8n-nodes-airbnb-scraper.git"
+    "url": "https://github.com/amirtds/n8n-nodes-airbnb-scraper.git"
   },
   "bugs": {
-    "url": "https://github.com/ShortRentals-AI/n8n-nodes-airbnb-scraper/issues"
+    "url": "https://github.com/amirtds/n8n-nodes-airbnb-scraper/issues"
   },
   "main": "dist/index.js",
   "scripts": {
